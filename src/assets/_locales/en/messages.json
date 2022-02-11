@@ -1,0 +1,62 @@
+{
+  "extName": {
+    "message": "Bookmark URL Batch Replacer"
+  },
+  "extDes": {
+    "message": "Batch replace bookmark URL."
+  },
+  "indexPatternLabel": {
+    "message": "Regex pattern: "
+  },
+  "indexFlagesLabel": {
+    "message": "Flags: "
+  },
+  "rulesFlagsGTip": {
+    "message": "Global search"
+  },
+  "rulesFlagsITip": {
+    "message": "Case-insensitive search"
+  },
+  "rulesFlagsUTip": {
+    "message": "\"unicode\"; treat a pattern as a sequence of unicode code points"
+  },
+  "indexReplacementLabel": {
+    "message": "Replacement: "
+  },
+  "indexPatternPlaceholder": {
+    "message": "Support substring matching"
+  },
+  "indexReplacementPlaceholder": {
+    "message": "Blank means to clear the matching content"
+  },
+  "indexLearnRegex": {
+    "message": "Regular expression help(learn-regex)"
+  },
+  "indexBtnPreview": {
+    "message": "Preview"
+  },
+  "indexBtnEffect": {
+    "message": "Effect"
+  },
+  "indexName": {
+    "message": "Name"
+  },
+  "indexSource": {
+    "message": "Source URL"
+  },
+  "indexResult": {
+    "message": "Result URL"
+  },
+  "indexErrorUpdateText": {
+    "message": "Unable to update bookmark"
+  },
+  "indexCompletionText": {
+    "message": "Operation completed!"
+  },
+  "indexUndoText": {
+    "message": "Undo"
+  },
+  "indexRegexUrl": {
+    "message": "https://github.com/ziishaned/learn-regex"
+  }
+}

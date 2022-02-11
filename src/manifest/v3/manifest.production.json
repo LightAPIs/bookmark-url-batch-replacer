@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extName__",
+  "description": "__MSG_extDes__",
+  "version": "1.0.0",
+  "author": "pana",
+  "homepage_url": "https://github.com/LightAPIs/bookmark-url-batch-replacer",
+  "default_locale": "en",
+  "icons": {
+    "16": "icons/icon_16.png",
+    "32": "icons/icon_32.png",
+    "48": "icons/icon_48.png",
+    "128": "icons/icon_128.png"
+  },
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "action": {
+    "default_title": "__MSG_extName__"
+  },
+  "permissions": ["bookmarks"],
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkJLG4ugVwwinEx4Ma/w8U2A9BsCugdVTlVta0bIF/QOYCDvwi6W+iQXMcmvOryI33CW/1jKm5aIAeZ3GQcNOECt0tw406P72soxFzZVCPwyWGcAsFVJPceXwp47pn5/AbMxFdRqtIVZr3tQ4tLuWHlfgsK/iOuc2YOY1Uc8lN3bOSvkslHkj0ur4i0PyscmJ8S4zWl0NL59yqCZdPVJIdlQR51GxPgxptF3Qfrg3crRrErEojBPq3bebE5BwXRZ7U2INebpb57uuFnCm/XxmE9bbWcQLcA0nQvrrsZ5BxGB6hVukRn7J2c32LVas6DTmNzmObCrZG4lWT3OSu3Z7nQIDAQAB"
+}

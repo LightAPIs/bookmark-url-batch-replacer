@@ -1,0 +1,62 @@
+{
+  "extName": {
+    "message": "书签网址批量替换器"
+  },
+  "extDes": {
+    "message": "批量替换书签的网址。"
+  },
+  "indexPatternLabel": {
+    "message": "正则模式: "
+  },
+  "indexFlagesLabel": {
+    "message": "标志: "
+  },
+  "rulesFlagsGTip": {
+    "message": "全局搜索"
+  },
+  "rulesFlagsITip": {
+    "message": "不区分大小写搜索"
+  },
+  "rulesFlagsUTip": {
+    "message": "使用 unicode 码的模式进行匹配"
+  },
+  "indexReplacementLabel": {
+    "message": "替换值: "
+  },
+  "indexPatternPlaceholder": {
+    "message": "支持使用括号的子字符串匹配"
+  },
+  "indexReplacementPlaceholder": {
+    "message": "空白时表示清除匹配内容"
+  },
+  "indexLearnRegex": {
+    "message": "正则表达式帮助(learn-regex)"
+  },
+  "indexBtnPreview": {
+    "message": "预览"
+  },
+  "indexBtnEffect": {
+    "message": "应用"
+  },
+  "indexName": {
+    "message": "名称"
+  },
+  "indexSource": {
+    "message": "原始网址"
+  },
+  "indexResult": {
+    "message": "结果网址"
+  },
+  "indexErrorUpdateText": {
+    "message": "无法更新书签"
+  },
+  "indexCompletionText": {
+    "message": "批量替换完成！"
+  },
+  "indexUndoText": {
+    "message": "撤消"
+  },
+  "indexRegexUrl": {
+    "message": "https://github.com/ziishaned/learn-regex/blob/master/translations/README-cn.md"
+  }
+}
