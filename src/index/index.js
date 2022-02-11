@@ -17,7 +17,7 @@ Vue.prototype.$notification = notification;
 Vue.prototype.$ui = ui;
 Vue.config.productionTip = false;
 
-document.title = ui.get('indexTitle');
+document.title = ui.get('extName');
 
 new Vue({
   el: '#index-app',
