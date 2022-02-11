@@ -8,14 +8,16 @@ Bookmark URL Batch Replacer is a gadget that can use Regular Expressions to batc
 
 ## Installation
 
+### Chromium 88+
+
 Go to the [Chrome Web Store](https://chrome.google.com/webstore/detail/bookmark-url-batch-replacer/dfnljilidcnlgaaacemdciplbblpjanll) to download and install.
 
 ### Other
 
 Start the browser and type `chrome://extensions/` in the address bar to enter Extensions Page, click the switch in the upper right corner of the webpage to turn on "Developer mode":
 
-- 1. Go to the [Releases](https://github.com/LightAPIs/bookmark-url-batch-replacer/releases/latest) to download the extension `crx` file. Drag to Extensions Page to install.
-- 2. Go to the [Releases](https://github.com/LightAPIs/bookmark-url-batch-replacer/releases/latest) to download the extension package `zip` file and unzip it. And click "Load unpacked" button, select the root directory of the previously unzipped file to complete the installation of the extension.
+1. Go to the [Releases](https://github.com/LightAPIs/bookmark-url-batch-replacer/releases/latest) to download the extension `crx` file. Drag to Extensions Page to install.
+2. Go to the [Releases](https://github.com/LightAPIs/bookmark-url-batch-replacer/releases/latest) to download the extension package `zip` file and unzip it. And click "Load unpacked" button, select the root directory of the previously unzipped file to complete the installation of the extension.
 
 ## Related projects
 
