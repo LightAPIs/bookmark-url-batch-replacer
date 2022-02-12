@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/LightAPIs/bookmark-url-batch-replacer/compare/v1.0.0...v1.0.1) (2022-02-12)
+
+
+### Bug Fixes
+
+* **index:** Fix page name ([b3be654](https://github.com/LightAPIs/bookmark-url-batch-replacer/commit/b3be654d78b5b06969894d77ec74e8576aab887b))
+
 ## 1.0.0 (2022-02-11)
 
 

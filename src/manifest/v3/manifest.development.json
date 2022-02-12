@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "__MSG_extName__ (Dev)",
   "description": "__MSG_extDes__",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "pana",
   "homepage_url": "https://github.com/LightAPIs/bookmark-url-batch-replacer",
   "default_locale": "en",
@@ -18,7 +18,9 @@
   "action": {
     "default_title": "__MSG_extName__ (Dev)"
   },
-  "permissions": ["bookmarks"],
+  "permissions": [
+    "bookmarks"
+  ],
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self';"
   }
