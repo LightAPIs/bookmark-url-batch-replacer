@@ -1,6 +1,6 @@
 # Bookmark URL Batch Replacer
 
-[![Release](https://img.shields.io/github/v/release/LightAPIs/bookmark-url-batch-replacer.svg?color=orange)](https://github.com/LightAPIs/bookmark-url-batch-replacer/releases/latest) [![Chrome Web Store](https://img.shields.io/chrome-web-store/v/dfnljilidcnlgaaacemdciplbblpjanll?maxAge=86400)](https://chrome.google.com/webstore/detail/bookmark-url-batch-replacer/dfnljilidcnlgaaacemdciplbblpjanll) [![MIT](https://img.shields.io/badge/license-MIT-green)](/LICENSE)
+[![Release](https://img.shields.io/github/v/release/LightAPIs/bookmark-url-batch-replacer.svg?color=orange)](https://github.com/LightAPIs/bookmark-url-batch-replacer/releases/latest) [![Chrome Web Store](https://img.shields.io/chrome-web-store/v/dfnljilidcnlgaaacemdciplbblpjanl?maxAge=86400)](https://chrome.google.com/webstore/detail/bookmark-url-batch-replac/dfnljilidcnlgaaacemdciplbblpjanl) [![MIT](https://img.shields.io/badge/license-MIT-green)](/LICENSE)
 
 > Batch replace bookmark URL.
 
@@ -10,7 +10,7 @@ Bookmark URL Batch Replacer is a gadget that can use Regular Expressions to batc
 
 ### Chromium 88+
 
-Go to the [Chrome Web Store](https://chrome.google.com/webstore/detail/bookmark-url-batch-replacer/dfnljilidcnlgaaacemdciplbblpjanll) to download and install.
+Go to the [Chrome Web Store](https://chrome.google.com/webstore/detail/bookmark-url-batch-replac/dfnljilidcnlgaaacemdciplbblpjanl) to download and install.
 
 ### Other
 
