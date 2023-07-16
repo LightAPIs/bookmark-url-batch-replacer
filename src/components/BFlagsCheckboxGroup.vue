@@ -1,5 +1,5 @@
 <template>
-  <a-checkbox-group :value="flags" :disabled="disabled" @update:flags="(v: string[]) => emit('update:flags', v)" class="b-flags-checkbox-group">
+  <a-checkbox-group :value="flags" :disabled="disabled" @update:value="(v: string[]) => emit('update:flags', v)" class="b-flags-checkbox-group">
     <a-row>
       <a-col :span="8">
         <a-tooltip :title="i18n('rulesFlagsGTip')">
