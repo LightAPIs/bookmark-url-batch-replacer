@@ -30,7 +30,12 @@
       </a-layout-header>
       <a-layout-content>
         <a-spin :spinning="fetching">
-          <a-table :columns="columns" :data-source="curData" :row-selection="{ selectedRowKeys: selectedRowKeys, onChange: onSelectChange }"></a-table>
+          <a-table
+            :columns="columns"
+            :data-source="curData"
+            :row-selection="{ selectedRowKeys: selectedRowKeys, onChange: onSelectChange }"
+            :pagination="{ showSizeChanger: true }"
+          ></a-table>
         </a-spin>
       </a-layout-content>
       <a-layout-footer class="index-footer">
@@ -55,16 +60,19 @@ const columns = [
     dataIndex: 'name',
     key: 'name',
     title: i18n('indexName'),
+    width: 150,
   },
   {
     dataIndex: 'source',
     key: 'source',
     title: i18n('indexSource'),
+    ellipsis: true,
   },
   {
     dataIndex: 'result',
     key: 'result',
     title: i18n('indexResult'),
+    ellipsis: true,
   },
 ];
 
