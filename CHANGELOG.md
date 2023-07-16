@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](///compare/v1.0.1...v1.1.0) (2023-07-16)
+
+
+### Features
+
+* Add page size switcher 86b3093, closes #2
+* Refactor code based on TypeScript 798e048
+
+
+### Bug Fixes
+
+* Fix the flag cannot be selected 964ca3e
+
 ### [1.0.1](https://github.com/LightAPIs/bookmark-url-batch-replacer/compare/v1.0.0...v1.0.1) (2022-02-12)
 
 
