@@ -4,42 +4,38 @@
   "private": true,
   "author": "pana <new4wang@outlook.com>",
   "license": "MIT",
+  "type": "module",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build:v2": "vue-cli-service build --mode pro-v2",
-    "build:v3": "vue-cli-service build --mode pro-v3",
-    "lint": "vue-cli-service lint",
-    "build-watch:v2": "vue-cli-service build-watch --mode dev-v2",
-    "build-watch:v3": "vue-cli-service build-watch --mode dev-v3",
+    "dev": "vue-tsc && cross-env NODE_ENV=development vite build --watch",
+    "dev:ff": "vue-tsc && cross-env NODE_ENV=development BROWSER=ff vite build --watch",
+    "build": "vue-tsc && vite build",
+    "build:ff": "vue-tsc && cross-env BROWSER=ff vite build",
+    "build:zip": "vue-tsc && cross-env ZIP_MODE=true vite build && cross-env ZIP_MODE=true BROWSER=ff vite build",
     "release": "standard-version"
   },
   "dependencies": {
-    "ant-design-vue": "^1.7.8",
-    "core-js": "^3.21.0",
-    "vue": "^2.6.14"
+    "ant-design-vue": "^4.0.0",
+    "vue": "^3.3.4"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "@vue/eslint-config-prettier": "^6.0.0",
-    "babel-eslint": "^10.1.0",
-    "babel-plugin-import": "^1.13.3",
-    "copy-webpack-plugin": "^6.3.2",
-    "eslint": "^6.7.2",
-    "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-vue": "^6.2.2",
-    "less": "^3.12.2",
-    "less-loader": "^7.1.0",
-    "prettier": "^2.2.1",
-    "standard-version": "^9.3.2",
-    "vue-cli-plugin-chrome-ext": "~0.0.5",
-    "vue-template-compiler": "^2.6.11",
-    "zip-webpack-plugin": "^4.0.1"
+    "@types/chrome": "^0.0.241",
+    "@types/node": "^20.4.2",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.45.0",
+    "eslint-plugin-vue": "^9.15.1",
+    "rollup-plugin-copy": "^3.4.0",
+    "typescript": "^5.1.6",
+    "unplugin-vue-components": "^0.25.1",
+    "vite": "^4.4.4",
+    "vite-plugin-zip-pack": "^1.0.6",
+    "vue-tsc": "^1.8.5"
   },
   "standard-version": {
     "scripts": {
-      "posttag": "npm run build:v2 && npm run build:v3"
+      "posttag": "pnpm run build:zip"
     }
   }
 }

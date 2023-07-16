@@ -48,7 +48,7 @@
     "message": "结果网址"
   },
   "indexErrorUpdateText": {
-    "message": "无法更新书签"
+    "message": "无法更新书签: "
   },
   "indexCompletionText": {
     "message": "批量替换完成！"

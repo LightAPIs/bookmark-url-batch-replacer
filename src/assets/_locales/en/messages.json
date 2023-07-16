@@ -48,7 +48,7 @@
     "message": "Result URL"
   },
   "indexErrorUpdateText": {
-    "message": "Unable to update bookmark"
+    "message": "Unable to update bookmark: "
   },
   "indexCompletionText": {
     "message": "Operation completed!"
