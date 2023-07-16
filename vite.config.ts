@@ -51,9 +51,9 @@ const plugins: PluginOption[] = [
 if (zipMode) {
   plugins.push(
     zipPack({
-      inDir: 'build',
+      inDir: `build/${browserMode}`,
       outDir: 'archive',
-      outFileName: `${packageInfo.name}-manifest-${browserMode}_v${packageInfo.version}.zip`,
+      outFileName: `${packageInfo.name}_${browserMode}_v${packageInfo.version}.zip`,
     })
   );
 }
