@@ -41,6 +41,12 @@ pnpm install
 - Build the Chrome/Edge version: `pnpm run build`
 - Build the Firefox version: `pnpm run build:ff`
 
+## Sponsors
+
+|      |
+| :--: |
+| <img width="50" src="https://avatars.githubusercontent.com/u/88715891?v=4" /></br>[cyberlionx](https://github.com/cyberlionx) |
+
 ## Credits
 
 - [vueComponent/ant-design-vue](https://github.com/vueComponent/ant-design-vue)
