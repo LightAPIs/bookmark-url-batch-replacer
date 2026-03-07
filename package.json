@@ -11,7 +11,7 @@
     "build": "vue-tsc && vite build",
     "build:ff": "vue-tsc && cross-env BROWSER=ff vite build",
     "build:zip": "vue-tsc && cross-env ZIP_MODE=true vite build && cross-env ZIP_MODE=true BROWSER=ff vite build",
-    "release": "standard-version"
+    "release": "commit-and-tag-version"
   },
   "dependencies": {
     "ant-design-vue": "^4.2.6",
@@ -24,12 +24,12 @@
     "@typescript-eslint/eslint-plugin": "^8.56.1",
     "@typescript-eslint/parser": "^8.56.1",
     "@vitejs/plugin-vue": "^6.0.4",
+    "commit-and-tag-version": "^12.6.1",
     "cross-env": "^10.1.0",
     "eslint": "^10.0.3",
     "eslint-plugin-vue": "^10.8.0",
     "globals": "^17.4.0",
     "rollup-plugin-copy": "^3.5.0",
-    "standard-version": "^9.5.0",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.56.1",
     "unplugin-vue-components": "^31.0.0",
@@ -38,7 +38,10 @@
     "vue-eslint-parser": "^10.4.0",
     "vue-tsc": "^3.2.5"
   },
-  "standard-version": {
+  "commit-and-tag-version": {
+    "skip": {
+      "changelog": true
+    },
     "scripts": {
       "posttag": "pnpm run build:zip"
     }
