@@ -3,7 +3,7 @@
   "name": "__MSG_extName__",
   "description": "__MSG_extDes__",
   "version": "1.1.1",
-  "author": "pana",
+  "author": "dragonish",
   "homepage_url": "https://github.com/LightAPIs/bookmark-url-batch-replacer",
   "default_locale": "en",
   "icons": {
@@ -13,9 +13,7 @@
     "128": "icons/icon_128.png"
   },
   "background": {
-    "scripts": [
-      "js/background.js"
-    ]
+    "scripts": ["js/background.js"]
   },
   "browser_specific_settings": {
     "gecko": {
@@ -25,7 +23,5 @@
   "action": {
     "default_title": "__MSG_extName__"
   },
-  "permissions": [
-    "bookmarks"
-  ]
+  "permissions": ["bookmarks"]
 }
