@@ -43,7 +43,7 @@ pnpm install
 
 ## Sponsors
 
-<!-- <!-- markdownlint-configure-file { "MD033": { "allowed_elements": ["img"] } } -->
+<!-- markdownlint-configure-file { "MD033": { "allowed_elements": ["img"] } } -->
 
 |                                                                                                                                            |
 | :----------------------------------------------------------------------------------------------------------------------------------------: |
