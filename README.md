@@ -24,7 +24,7 @@ Go to the [Microsoft Edge Addons](https://microsoftedge.microsoft.com/addons/det
 
 ### Environment
 
-- Install [Node.js](https://nodejs.org/) 8.9 and above (_new version has integrated npm_)
+- Install [Node.js](https://nodejs.org/) 22 and above
 
 ### Initialization
 
@@ -43,9 +43,11 @@ pnpm install
 
 ## Sponsors
 
-|      |
-| :--: |
-| <img width="50" src="https://avatars.githubusercontent.com/u/88715891?v=4" /></br>[cyberlionx](https://github.com/cyberlionx) |
+<!-- <!-- markdownlint-configure-file { "MD033": { "allowed_elements": ["img"] } } -->
+
+|                                                                                                                                            |
+| :----------------------------------------------------------------------------------------------------------------------------------------: |
+| <img width="50" src="https://avatars.githubusercontent.com/u/88715891?v=4" alt="avatar" /></br>[cyberlionx](https://github.com/cyberlionx) |
 
 ## Credits
 
@@ -55,4 +57,3 @@ pnpm install
 ## License
 
 [MIT](/LICENSE)
-
