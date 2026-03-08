@@ -35,6 +35,9 @@
   "indexBtnPreview": {
     "message": "Preview"
   },
+  "indexBtnSelectAll": {
+    "message": "Select All"
+  },
   "indexBtnEffect": {
     "message": "Effect"
   },

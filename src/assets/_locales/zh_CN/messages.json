@@ -35,6 +35,9 @@
   "indexBtnPreview": {
     "message": "预览"
   },
+  "indexBtnSelectAll": {
+    "message": "全选"
+  },
   "indexBtnEffect": {
     "message": "应用"
   },

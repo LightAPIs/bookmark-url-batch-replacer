@@ -23,6 +23,9 @@
               <a-button type="primary" :loading="fetching" @click="onPreview">{{ i18n('indexBtnPreview') }}</a-button>
             </a-col>
             <a-col :md="4" :lg="2">
+              <a-button :disabled="!hadResult" @click="onSelectAll">{{ i18n('indexBtnSelectAll') }}</a-button>
+            </a-col>
+            <a-col :md="4" :lg="2">
               <a-button type="primary" danger :disabled="!hadSelected" :loading="fetching" @click="onEffect">{{ i18n('indexBtnEffect') }}</a-button>
             </a-col>
           </a-row>
@@ -162,6 +165,10 @@ async function onUndo() {
 
 function onSelectChange(selected: Key[]) {
   selectedRowKeys.value = selected.map(v => v.toString());
+}
+
+function onSelectAll() {
+  selectedRowKeys.value = curData.value.map(item => item.key);
 }
 </script>
 
