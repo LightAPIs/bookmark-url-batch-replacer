@@ -52,6 +52,7 @@ import { getTree, updateUrl } from '@/common/bookmark';
 import BInputBarRow from '@/components/BInputBarRow.vue';
 import BFlagsCheckboxGroup from '@/components/BFlagsCheckboxGroup.vue';
 import { message, notification } from 'ant-design-vue';
+import type { Key } from 'ant-design-vue/es/table/interface';
 
 const undoKey = 'index-undo-key';
 
@@ -159,8 +160,8 @@ async function onUndo() {
   onPreview();
 }
 
-function onSelectChange(selected: string[]) {
-  selectedRowKeys.value = selected;
+function onSelectChange(selected: Key[]) {
+  selectedRowKeys.value = selected.map(v => v.toString());
 }
 </script>
 
