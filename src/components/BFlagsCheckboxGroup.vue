@@ -1,5 +1,5 @@
 <template>
-  <a-checkbox-group :value="flags" :disabled="disabled" @update:value="onUpdate" class="b-flags-checkbox-group">
+  <a-checkbox-group v-model:value="flags" :disabled="disabled" class="b-flags-checkbox-group">
     <a-row>
       <a-col :span="8">
         <a-tooltip :title="i18n('rulesFlagsGTip')">
@@ -22,23 +22,14 @@
 
 <script setup lang="ts">
 import { i18n } from '@/common/ui';
-import type { CheckboxValueType } from 'ant-design-vue/es/checkbox/interface';
+
+const flags = defineModel<string[]>('flags', {
+  required: true,
+});
 
 defineProps<{
-  flags: string[];
   disabled?: boolean;
 }>();
-
-const emit = defineEmits<{
-  (e: 'update:flags', value: string[]): void;
-}>();
-
-function onUpdate(value: CheckboxValueType[]) {
-  emit(
-    'update:flags',
-    value.map(v => v.toString()),
-  );
-}
 </script>
 
 <style>
