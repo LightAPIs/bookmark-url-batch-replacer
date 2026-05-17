@@ -30,7 +30,7 @@
     "message": "不区分大小写搜索"
   },
   "rulesFlagsUTip": {
-    "message": "使用 unicode 码的模式进行匹配"
+    "message": "使用 Unicode 码的模式进行匹配"
   },
   "indexReplacementLabel": {
     "message": "替换值: "

@@ -30,7 +30,7 @@
     "message": "Case-insensitive search"
   },
   "rulesFlagsUTip": {
-    "message": "\"unicode\"; treat a pattern as a sequence of unicode code points"
+    "message": "\"Unicode\"; treat a pattern as a sequence of unicode code points"
   },
   "indexReplacementLabel": {
     "message": "Replacement: "
