@@ -14,7 +14,7 @@ const modeDir = productionMode ? 'build' : 'dist';
 
 const htmlNames = ['index'];
 const jsNames = ['background'];
-const pages = {};
+const pages: { [key: string]: string } = {};
 
 htmlNames.forEach(name => {
   pages[name] = `src/${name}/index.html`;
@@ -54,7 +54,7 @@ if (zipMode) {
       inDir: `build/${browserMode}`,
       outDir: 'archive',
       outFileName: `${packageInfo.name}_${browserMode}_v${packageInfo.version}.zip`,
-    })
+    }),
   );
 }
 
