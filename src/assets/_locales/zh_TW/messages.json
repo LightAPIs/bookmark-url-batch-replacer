@@ -1,0 +1,95 @@
+{
+  "extName": {
+    "message": "書籤網址批次替換器"
+  },
+  "extDes": {
+    "message": "批次替換書籤的網址。"
+  },
+  "indexPatternLabel": {
+    "message": "模式: "
+  },
+  "indexReplaceMode": {
+    "message": "替換模式: "
+  },
+  "indexPatternPlaceholderNormal": {
+    "message": "輸入要替換的字串"
+  },
+  "indexModeNormal": {
+    "message": "普通替換"
+  },
+  "indexModeRegex": {
+    "message": "正則替換"
+  },
+  "indexFlagesLabel": {
+    "message": "標誌: "
+  },
+  "rulesFlagsGTip": {
+    "message": "全域性搜尋"
+  },
+  "rulesFlagsITip": {
+    "message": "不區分大小寫搜尋"
+  },
+  "rulesFlagsUTip": {
+    "message": "使用 Unicode 碼的模式進行匹配"
+  },
+  "rulesFlagsVTip": {
+    "message": "Unicode 集合匹配，支援字元類減法和交集"
+  },
+  "indexReplacementLabel": {
+    "message": "替換值: "
+  },
+  "indexPatternPlaceholder": {
+    "message": "支援使用括號的子字串匹配"
+  },
+  "indexReplacementPlaceholder": {
+    "message": "空白時表示清除匹配內容"
+  },
+  "indexReplaceCountLabel": {
+    "message": "替換次數: "
+  },
+  "indexReplaceCountPlaceholder": {
+    "message": "0 表示全部替換"
+  },
+  "indexLearnRegex": {
+    "message": "正規表示式幫助(learn-regex)"
+  },
+  "indexBtnPreview": {
+    "message": "預覽"
+  },
+  "indexBtnSelectAll": {
+    "message": "全選"
+  },
+  "indexBtnEffect": {
+    "message": "應用"
+  },
+  "indexName": {
+    "message": "名稱"
+  },
+  "indexSource": {
+    "message": "原始網址"
+  },
+  "indexResult": {
+    "message": "結果網址"
+  },
+  "indexErrorUpdateText": {
+    "message": "無法更新書籤: "
+  },
+  "indexCompletionText": {
+    "message": "批次替換完成！"
+  },
+  "indexUndoText": {
+    "message": "撤消"
+  },
+  "indexRegexUrl": {
+    "message": "https://github.com/ziishaned/learn-regex/blob/master/translations/README-cn.md"
+  },
+  "themeModeAuto": {
+    "message": "跟隨系統"
+  },
+  "themeModeLight": {
+    "message": "淺色"
+  },
+  "themeModeDark": {
+    "message": "深色"
+  }
+}
