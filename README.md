@@ -53,6 +53,7 @@ pnpm install
 
 - [vueComponent/ant-design-vue](https://github.com/vueComponent/ant-design-vue)
 - [vuejs/core](https://github.com/vuejs/core)
+- [vueuse/vueuse](https://github.com/vueuse/vueuse)
 
 ## License
 
