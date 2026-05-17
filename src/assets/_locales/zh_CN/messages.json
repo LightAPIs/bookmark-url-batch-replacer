@@ -82,5 +82,14 @@
   },
   "indexRegexUrl": {
     "message": "https://github.com/ziishaned/learn-regex/blob/master/translations/README-cn.md"
+  },
+  "themeModeAuto": {
+    "message": "跟随系统"
+  },
+  "themeModeLight": {
+    "message": "浅色"
+  },
+  "themeModeDark": {
+    "message": "深色"
   }
 }

@@ -82,5 +82,14 @@
   },
   "indexRegexUrl": {
     "message": "https://github.com/ziishaned/learn-regex"
+  },
+  "themeModeAuto": {
+    "message": "Follow system"
+  },
+  "themeModeLight": {
+    "message": "Light"
+  },
+  "themeModeDark": {
+    "message": "Dark"
   }
 }

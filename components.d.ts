@@ -15,6 +15,7 @@ declare module 'vue' {
     ACheckbox: typeof import('ant-design-vue/es')['Checkbox']
     ACheckboxGroup: typeof import('ant-design-vue/es')['CheckboxGroup']
     ACol: typeof import('ant-design-vue/es')['Col']
+    AConfigProvider: typeof import('ant-design-vue/es')['ConfigProvider']
     AInput: typeof import('ant-design-vue/es')['Input']
     AInputNumber: typeof import('ant-design-vue/es')['InputNumber']
     ALayout: typeof import('ant-design-vue/es')['Layout']
@@ -29,5 +30,6 @@ declare module 'vue' {
     ATooltip: typeof import('ant-design-vue/es')['Tooltip']
     BFlagsCheckboxGroup: typeof import('./src/components/BFlagsCheckboxGroup.vue')['default']
     BInputBarRow: typeof import('./src/components/BInputBarRow.vue')['default']
+    BThemeSwitcher: typeof import('./src/components/BThemeSwitcher.vue')['default']
   }
 }
