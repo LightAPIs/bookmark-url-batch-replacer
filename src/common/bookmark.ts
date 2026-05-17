@@ -1,20 +1,31 @@
-import { regTest, regReplace } from './reg';
+import { regTest, regReplace, normalTest, normalReplace } from './replace';
 
-function arrayHandler(arr: chrome.bookmarks.BookmarkTreeNode[], pattern: string, flags: string[] | string, replacement: string): DataItem[] {
+function arrayHandler(
+  arr: chrome.bookmarks.BookmarkTreeNode[],
+  pattern: string,
+  flags: string[] | string,
+  replacement: string,
+  isRegex: boolean,
+  replaceCount: number,
+): DataItem[] {
   const data: DataItem[] = [];
   if (arr) {
     arr.forEach(item => {
       if (item.children && item.children.length > 0) {
-        data.push(...arrayHandler(item.children, pattern, flags, replacement));
+        data.push(...arrayHandler(item.children, pattern, flags, replacement, isRegex, replaceCount));
       } else {
         const { id, title, url } = item;
-        if (url && regTest(pattern, flags, url)) {
-          data.push({
-            key: id,
-            name: title,
-            source: url,
-            result: regReplace(pattern, flags, url, replacement),
-          });
+        if (url) {
+          const matched = isRegex ? regTest(pattern, flags, url) : normalTest(pattern, url);
+          if (matched) {
+            const result = isRegex ? regReplace(pattern, flags, url, replacement) : normalReplace(pattern, url, replacement, replaceCount);
+            data.push({
+              key: id,
+              name: title,
+              source: url,
+              result,
+            });
+          }
         }
       }
     });
@@ -23,12 +34,12 @@ function arrayHandler(arr: chrome.bookmarks.BookmarkTreeNode[], pattern: string,
   return data;
 }
 
-export async function getTree(pattern: string, flags: string[] | string, replacement: string): Promise<DataItem[]> {
+export async function getTree(pattern: string, flags: string[] | string, replacement: string, isRegex = true, replaceCount = 0): Promise<DataItem[]> {
   const arr = await chrome.bookmarks.getTree(); //! chrome 90+
   if (arr.length > 0) {
     const treeData = arr[0].children;
     if (treeData) {
-      return arrayHandler(treeData, pattern, flags, replacement);
+      return arrayHandler(treeData, pattern, flags, replacement, isRegex, replaceCount);
     }
   }
   return [];

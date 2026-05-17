@@ -6,7 +6,19 @@
     "message": "Batch replace bookmark URL."
   },
   "indexPatternLabel": {
-    "message": "Regex pattern: "
+    "message": "Pattern: "
+  },
+  "indexReplaceMode": {
+    "message": "Replacement mode: "
+  },
+  "indexPatternPlaceholderNormal": {
+    "message": "Enter string to replace"
+  },
+  "indexModeNormal": {
+    "message": "Normal Replace"
+  },
+  "indexModeRegex": {
+    "message": "Regex Replace"
   },
   "indexFlagesLabel": {
     "message": "Flags: "
@@ -28,6 +40,12 @@
   },
   "indexReplacementPlaceholder": {
     "message": "Blank means to clear the matching content"
+  },
+  "indexReplaceCountLabel": {
+    "message": "Replace count: "
+  },
+  "indexReplaceCountPlaceholder": {
+    "message": "0 means replace all"
   },
   "indexLearnRegex": {
     "message": "Regular expression help(learn-regex)"

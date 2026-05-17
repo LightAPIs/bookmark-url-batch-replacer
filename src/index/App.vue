@@ -5,11 +5,32 @@
         <div class="input-bar">
           <b-input-bar-row>
             <template #label>{{ i18n('indexPatternLabel') }}</template>
-            <a-input v-model:value="pattern" :disabled="fetching" :placeholder="i18n('indexPatternPlaceholder')" />
+            <a-input
+              v-model:value="pattern"
+              :disabled="fetching"
+              :placeholder="isRegex ? i18n('indexPatternPlaceholder') : i18n('indexPatternPlaceholderNormal')"
+            />
           </b-input-bar-row>
           <b-input-bar-row>
+            <template #label>{{ i18n('indexReplaceMode') }}</template>
+            <a-radio-group v-model:value="isRegex" :disabled="fetching">
+              <a-radio :value="false">{{ i18n('indexModeNormal') }}</a-radio>
+              <a-radio :value="true">{{ i18n('indexModeRegex') }}</a-radio>
+            </a-radio-group>
+          </b-input-bar-row>
+          <b-input-bar-row v-if="isRegex">
             <template #label>{{ i18n('indexFlagesLabel') }}</template>
             <b-flags-checkbox-group v-model:flags="flags" :disabled="fetching"></b-flags-checkbox-group>
+          </b-input-bar-row>
+          <b-input-bar-row v-if="!isRegex">
+            <template #label>{{ i18n('indexReplaceCountLabel') }}</template>
+            <a-input-number
+              v-model:value="replaceCount"
+              :disabled="fetching"
+              :min="0"
+              :placeholder="i18n('indexReplaceCountPlaceholder')"
+              style="width: 100%"
+            />
           </b-input-bar-row>
           <b-input-bar-row>
             <template #label>{{ i18n('indexReplacementLabel') }}</template>
@@ -50,6 +71,7 @@
 
 <script setup lang="ts">
 import { ref, computed, nextTick, h } from 'vue';
+import { useLocalStorage } from '@vueuse/core';
 import { i18n } from '@/common/ui';
 import { getTree, updateUrl } from '@/common/bookmark';
 import BInputBarRow from '@/components/BInputBarRow.vue';
@@ -82,9 +104,11 @@ const columns = [
 
 const fetching = ref(false);
 
+const isRegex = useLocalStorage('replace-mode-is-regex', false);
 const pattern = ref('');
 const flags = ref<string[]>([]);
 const replacement = ref('');
+const replaceCount = ref<number | undefined>(undefined);
 
 const curData = ref<DataItem[]>([]);
 const oldData = ref<DataItem[]>([]);
@@ -99,7 +123,7 @@ async function onPreview() {
     selectedRowKeys.value = [];
     curData.value = [];
 
-    curData.value = await getTree(pattern.value, flags.value, replacement.value);
+    curData.value = await getTree(pattern.value, flags.value, replacement.value, isRegex.value, replaceCount.value ?? 0);
   }
   fetching.value = false;
 }

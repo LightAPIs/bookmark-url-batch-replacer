@@ -6,7 +6,19 @@
     "message": "批量替换书签的网址。"
   },
   "indexPatternLabel": {
-    "message": "正则模式: "
+    "message": "模式: "
+  },
+  "indexReplaceMode": {
+    "message": "替换模式: "
+  },
+  "indexPatternPlaceholderNormal": {
+    "message": "输入要替换的字符串"
+  },
+  "indexModeNormal": {
+    "message": "普通替换"
+  },
+  "indexModeRegex": {
+    "message": "正则替换"
   },
   "indexFlagesLabel": {
     "message": "标志: "
@@ -28,6 +40,12 @@
   },
   "indexReplacementPlaceholder": {
     "message": "空白时表示清除匹配内容"
+  },
+  "indexReplaceCountLabel": {
+    "message": "替换次数: "
+  },
+  "indexReplaceCountPlaceholder": {
+    "message": "0 表示全部替换"
   },
   "indexLearnRegex": {
     "message": "正则表达式帮助(learn-regex)"
