@@ -1,19 +1,25 @@
 <template>
   <a-checkbox-group v-model:value="flags" :disabled="disabled" class="b-flags-checkbox-group">
     <a-row>
-      <a-col :span="8">
+      <a-col :span="6">
         <a-tooltip :title="i18n('rulesFlagsGTip')">
           <a-checkbox value="g">g</a-checkbox>
         </a-tooltip>
       </a-col>
-      <a-col :span="8">
+      <a-col :span="6">
         <a-tooltip :title="i18n('rulesFlagsITip')">
           <a-checkbox value="i">i</a-checkbox>
         </a-tooltip>
       </a-col>
-      <a-col :span="8">
+      <a-col :span="6">
         <a-tooltip :title="i18n('rulesFlagsUTip')">
           <a-checkbox value="u">u</a-checkbox>
+        </a-tooltip>
+      </a-col>
+      <a-col :span="6">
+        <a-tooltip :title="i18n('rulesFlagsVTip')">
+          <a-checkbox value="v">v</a-checkbox>
+          <!-- ! chrome 112+ | firefox 116+ -->
         </a-tooltip>
       </a-col>
     </a-row>

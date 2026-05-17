@@ -3,7 +3,7 @@ import { regTest, regReplace, normalTest, normalReplace } from './replace';
 function arrayHandler(
   arr: chrome.bookmarks.BookmarkTreeNode[],
   pattern: string,
-  flags: string[] | string,
+  flags: string,
   replacement: string,
   isRegex: boolean,
   replaceCount: number,
@@ -35,11 +35,21 @@ function arrayHandler(
 }
 
 export async function getTree(pattern: string, flags: string[] | string, replacement: string, isRegex = true, replaceCount = 0): Promise<DataItem[]> {
+  let f = '';
+  if (Array.isArray(flags)) {
+    f = flags.join('');
+  } else if (typeof flags === 'string') {
+    f = flags;
+  }
+  if (f.includes('v')) {
+    f = f.replace(/u/g, '');
+  }
+
   const arr = await chrome.bookmarks.getTree(); //! chrome 90+
   if (arr.length > 0) {
     const treeData = arr[0].children;
     if (treeData) {
-      return arrayHandler(treeData, pattern, flags, replacement, isRegex, replaceCount);
+      return arrayHandler(treeData, pattern, f, replacement, isRegex, replaceCount);
     }
   }
   return [];

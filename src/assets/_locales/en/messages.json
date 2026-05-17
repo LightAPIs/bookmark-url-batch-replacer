@@ -32,6 +32,9 @@
   "rulesFlagsUTip": {
     "message": "\"Unicode\"; treat a pattern as a sequence of unicode code points"
   },
+  "rulesFlagsVTip": {
+    "message": "\"UnicodeSets\"; enables advanced Unicode set matching with subtraction and intersection"
+  },
   "indexReplacementLabel": {
     "message": "Replacement: "
   },

@@ -32,6 +32,9 @@
   "rulesFlagsUTip": {
     "message": "使用 Unicode 码的模式进行匹配"
   },
+  "rulesFlagsVTip": {
+    "message": "Unicode 集合匹配，支持字符类减法和交集"
+  },
   "indexReplacementLabel": {
     "message": "替换值: "
   },

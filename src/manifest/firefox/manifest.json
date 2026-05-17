@@ -13,19 +13,16 @@
     "128": "icons/icon_128.png"
   },
   "background": {
-    "scripts": [
-      "js/background.js"
-    ]
+    "scripts": ["js/background.js"]
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "bookmarkurlbatchreplacer@addons.com"
+      "id": "bookmarkurlbatchreplacer@addons.com",
+      "strict_min_version": "116.0"
     }
   },
   "action": {
     "default_title": "__MSG_extName__"
   },
-  "permissions": [
-    "bookmarks"
-  ]
+  "permissions": ["bookmarks"]
 }

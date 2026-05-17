@@ -3,7 +3,7 @@
   "name": "__MSG_extName__",
   "description": "__MSG_extDes__",
   "version": "1.2.0",
-  "minimum_chrome_version": "90",
+  "minimum_chrome_version": "112",
   "author": "dragonish",
   "homepage_url": "https://github.com/LightAPIs/bookmark-url-batch-replacer",
   "default_locale": "en",
@@ -19,7 +19,5 @@
   "action": {
     "default_title": "__MSG_extName__"
   },
-  "permissions": [
-    "bookmarks"
-  ]
+  "permissions": ["bookmarks"]
 }

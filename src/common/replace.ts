@@ -33,22 +33,15 @@ export function normalTest(pattern: string, str: string) {
 /**
  * Regex replacement method
  * @param pattern pattern string
- * @param flags flags string array
+ * @param flags flags string
  * @param str source string
  * @param replacement replacement string(defalut empty)
  */
-export function regReplace(pattern: string, flags: string[] | string, str: string, replacement = '') {
+export function regReplace(pattern: string, flags: string, str: string, replacement = '') {
   let result = '';
   if (str) {
-    let f = '';
-    if (Array.isArray(flags)) {
-      f = flags.join('');
-    } else if (typeof flags === 'string') {
-      f = flags;
-    }
-
     try {
-      const re = new RegExp(pattern, f);
+      const re = new RegExp(pattern, flags);
       result = str.replace(re, replacement);
     } catch (e) {
       console.error(e);
@@ -61,21 +54,14 @@ export function regReplace(pattern: string, flags: string[] | string, str: strin
 /**
  * Regex test method
  * @param pattern pattern string
- * @param flags flags string array
+ * @param flags flags string
  * @param str test string
  */
-export function regTest(pattern: string, flags: string[] | string, str: string) {
+export function regTest(pattern: string, flags: string, str: string) {
   let result = false;
   if (str) {
-    let f = '';
-    if (Array.isArray(flags)) {
-      f = flags.join('');
-    } else if (typeof flags === 'string') {
-      f = flags;
-    }
-
     try {
-      const re = new RegExp(pattern, f);
+      const re = new RegExp(pattern, flags);
       result = re.test(str);
     } catch (e) {
       console.error(e);
